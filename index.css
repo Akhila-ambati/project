@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url("ui.png.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-left: 30%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-size: cover;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.navbar a:hover {
+    color: orangered;
+   
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.search-icon {
+    font-size: 24px;
+    padding-top: 1%;
+    color: white;
+   
+}
+
+.search-icon:hover {
+    color: orangered;
+    transform: scale(1.4);
+}
+
+.cart {
+    color: white;
+    font-size: 24px;
+    padding-right: 10%;
+    padding-top: 1%;
+}
+
+.cart:hover {
+    color: orangered;
+    transform: scale(1.4);
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 1%;
+}
+
+.header-content {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    align-items: center;
+    margin: 0;
+}
+@media only screen and (width<600px){
+    .header-content h1{
+        text-align: center;
+        font-size: larger;
+    }
+    .header-content p{
+        text-align: center;
+        font-size: small;
+    }
+}
+
+.header-content p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.buttons .btn {
+    background-color: orangered;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: black;
+    color: orangered;
+    transform: scale(1,1.4);
+}
+
+.buttons .btn1 {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    border: 1px solid orangered;
+}
+
+.buttons .btn1:hover {
+    background-color: orangered;
+    transform: scale(1,1.4);
+}
+.hide a {
+     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .hide a {
+        display: none;
+        width: 100vw;
+    }
+   
+
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    .buttons .btn {
+        padding: 8px 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 7rem;
+    color: orangered;
+}
+
+.free, .support, .refund h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    padding-top: 4rem;
+}
+
+.free, .support, .refund p {
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .services {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.products {
+    text-align: center;
+    padding: 7rem;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.products p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 6rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    justify-content: space-around;
+    width: 30%;
+    height: 60vh;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 3%;
+    background-color: white;
+    padding-top: 2em;
+   
+}
+
+.product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.icon-button {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: small;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: black;
+    transform: scale(1,1.4);
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .products {
+        padding: 3rem;
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .products h2 {
+        font-size: 2em;
+    }
+
+    .products p {
+        font-size: 14px;
+    }
+
+    .product-list {
+        padding-top: 3rem;
+        padding-right: 5rem;
+    }
+
+    .product {
+        width: 100%;
+        height: auto;
+        padding-top: 1em;
+    }
+
+    .product img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-button {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+.discount-button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: orangered;
+    border: 5px solid orangered;
+    border-radius: 100%; /* This will round the corners */
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10%;
+   
+}
+
+.discount-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.discount-button:hover {
+    background-color: black;
+    /* transform: scale(1.2); */
+}
+
+.h {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.j {
+    margin-left: 15%;
+}
+
+.month {
+    text-decoration: orangered;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 3px;
+    text-align: center;
+    font-size: small;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid orangered;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.box h2 {
+    color: orangered;
+}
+
+.part1 {
+    background-color: whitesmoke;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .h {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.carousel-item {
+    background-color: white;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+.carousel-slide {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item {
+        flex: 0 0 50%;
+    }
+}
+
+.year {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 30%;
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+.knowmore {
+    border-radius: 30%;
+    color: white;
+    background-color: orangered;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.knowmore:hover {
+    background-color: black;
+    color: orangered;
+    transform: scale(1.2);
+}
+
+.iframe {
+    margin-top: 0;
+    padding: 0;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+.k {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 10%;
+}
+
+.n {
+    margin-left: 20%;
+    font-weight: 4.5em;
+    padding-top: 10%;
+}
+
+.q, .r, .s {
+    margin-left: 0%;
+}
+
+.u {
+    font-size: 3.5em;
+}
+
+.m {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: whitesmoke;
+}
+
+.btn3 {
+    border-radius: 30%;
+    color: white;
+    background-color: orangered;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    background-color: black;
+    color: orangered;
+    transform: scale(1.2);
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .year {
+        grid-template-columns: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .n {
+        margin-top: 28%;
+        margin-left: 10%;
+    }
+
+    .m {
+        display: flex;
+        flex-direction: column;
+    }
+    .u{
+        margin-top: 10%;
+    }
+    .t{
+        margin-left:5%;
+       
+    }
+}
+.main4 {
+    margin-top: 5%;
+}
+
+.card10 {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    padding-top: 5%;
+}
+
+.card11 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    width: 50vw;
+}
+
+.card11:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card11 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: orangered;
+    transform:scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .card10 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.color {
+    background-color: whitesmoke;
+    height: 30vh;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item1 {
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.carousel-item1 img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: black;
+    width: 100vw;
+    padding-top: 50%;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul, .footer li {
+    color: grey;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li:hover {
+    color: orangered;
+    transform: scale(1.2);
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 18px;
+}
+
+.footer .social-icons a:hover {
+    color: orangered;
+   
+}
+
+.footer .text-center {
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: orangered;
+    transform: scale(1.2);
+}
+
+.list-unstyled:hover {
+    color: orangered;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 110vw;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 10%;
+    
+}
+
+
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    width: 100vw;
+    margin-top: 0.1%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+    .copy {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+       
+    }
+    .footer {
+        width: 100vw;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="n.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <header class="header">
+        <nav class="navbar">
+            <img id="logo1"src="https://project2.safeerahmedportfolio.site/assets/img/logo.png" style="margin-left:4rem; width: 10rem; height: 5rem;">
+            <script>
+                gsap.to("#logo1", { duration: 10, x: 50, scale: 1.2, ease: "bounce.out"});
+              </script>
+            <div class="hide">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+            <div class="a">
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </div></div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+       
+                
+    
+        <script>
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+    
+            function toggleMenu() {
+                const hide = document.querySelector('.hide');
+                hide.classList.toggle('show');
+            }
+        </script> 
+        <div class="header-content">
+            <p id="and"style="color: orangered;">FRESH & ORGANIC</p><br>
+            <script>
+                gsap.to("#and", { duration: 50, x: 30,x:-20, scale: 1, ease: "bounce.out"});
+              </script>
+            <h1 id="title" style="font-size: 4.5em;">Delicious Seasonal Fruits</h1>
+            <script>
+                gsap.to("#title", { duration: 50, x: 100, scale: (1.5), easein: "power2.out"});
+              </script>
+            <br><br>
+            <div class="buttons">
+                <a href="#" class="btn">Fruit Collection</a>
+                <a href="#" class="btn1">Contact Us</a>
+            </div>
+        </div>
+    </header>
+</div>
+</nav>   
+
+    <div class="services">
+        <div class="service">
+            <i id="truck"class="fa fa-truck"></i>
+            <script>
+                gsap.to("#truck", { duration: 100, x: 30, scale: 0.8, ease: "bounce.out"});
+              </script>
+        </div>
+        <div class="free">
+            <h3>Free Shipping</h3>
+            <p>When order over $75</p>
+        </div>
+        <div class="service">
+            <i id="truck"class="fa fa-headset"></i></div>
+           <div class="support">
+            <h3>24/7 Support</h3>
+            <p>Get support all day</p>
+        </div>
+        <div class="service">
+            <i id="truck"class="fa fa-undo"></i>
+            <script>
+                gsap.to("#truck", { duration: 100, x: 30,y:-30, scale: 0.8, ease: "bounce.out"});
+              </script>
+        </div>
+            <div class="refund" style="">
+            <h3>Refund</h3>
+            <p>Get refund within 3 days!</p>
+        
+        </div>
+
+    </div>
+    <section class="products">
+        <h2 id="our"><span style="color: orangered;">Our</span> <span style="text-decoration: underline orangered;">Products</span></h2>
+        <script>
+            gsap.to("#our", { duration: 50, x: 30,x:-30, scale: 1.5, ease: "bounce.out"});
+          </script>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Aliquid, fuga quas itaque eveniet beatae optio.</p>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://thumbs.dreamstime.com/b/three-strawberries-strawberry-leaf-white-background-114284301.jpg" alt="Strawberry">
+                <h3>Strawberry</h3>
+                <p>per kg</p>
+                <h2>85$</h2>
+                <button class="icon-button" style="border-radius: 35%;">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to cart
+              </button>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/VD/FV/FA/SELLER-52971039/black-grapes-5-kg.jpg" alt="Berry">
+                <h3>Berry</h3>
+                <p>per kg</p>
+                <h2>70$</h2>
+                <button class="icon-button" style="border-radius: 35%;">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to cart
+              </button>
+            </div>
+            <div class="product">
+                <img src="https://st.depositphotos.com/1020804/2370/i/950/depositphotos_23707225-stock-photo-lemons-with-leaves.jpg" alt="Lemon">
+                <h3>Lemon</h3>
+                <p>per kg</p>
+                <h2>35$</h2>
+                <button class="icon-button" style="border-radius: 35%;">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to cart
+              </button>
+            </div>
+        </div>
+    </section>
+    <div class="part1">
+        <button id="button9" class="discount-button">
+            <script>
+                gsap.to("#button9", { duration: 50, x: 100, scale:1.5, ease: "bounce.out"});
+              </script>
+           <b> 30% </b><p>Off per kg</p>
+        </button>
+        <div class="h">
+        <div class="i">
+            <img id="image" src="https://themewagon.github.io/fruitkha/assets/img/a.jpg" style="margin-left: 20%; margin-top: 0%;">
+            <script>
+                gsap.to("#image", { duration: 50, x: 100, scale:0.7, ease: "bounce.out"});
+              </script>
+             
+        </div>
+    <div class="j">
+        <h1><span style="color: orangered;"><b>Deal</span> of the month</b></h1>
+        <h4>HIKAN STRAWBERRY</h4>
+        <br>
+        <br>
+        <P>Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</P>
+        <br><br>
+        
+      <div class="box-container">
+        <div class="box"><h2>00</h2><p style="margin-top: -10%;">Days</p></div>
+        <div class="box"><h2>00</h2><p style="margin-top: -10%;">Hours</p></div>
+        <div class="box"><h2>00</h2><p style="margin-top: -10%;">Mins</p></div>
+        <div class="box"><h2>00</h2><p style="margin-top: -10%;">Secs</p></div>
+    </div><br><br>
+    <button class="icon-button" style="border-radius: 35%;">
+        <i class="fas fa-shopping-cart"></i>
+        Add to cart
+    </button>
+    </div>
+    </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" style="background-color: white; width: 100vw; height: 100vh;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <center><img src="https://themewagon.github.io/fruitkha/assets/img/avaters/avatar2.png" alt="Los Angeles" style="width:200px; border-radius: 50%; margin-top: 5%; margin-bottom: 10%;"></center>
+            <!-- <br><br><br><br><br> -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black; margin-top: 30%;">David Niph</h5>
+                <p style="color: black;">"Unde omnis iste natus error veritatis et quae ab illo inventore Sed ut perspiciatis error sit voluptatem accusantium"</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <center><img src="https://themewagon.github.io/fruitkha/assets/img/avaters/avatar1.png" alt="Los Angeles" style="width:200px; border-radius: 50%; margin-top: 5%; margin-bottom: 10%;"></center>
+            <!-- <br><br><br><br><br> -->
+    
+            <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: black; margin-top: 30%;">Saira Hakim</h5>
+                <p style="color: black;">"Unde omnis iste natus error veritatis et quae ab illo inventore Sed ut perspiciatis error sit voluptatem accusantium"</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <center><img src="https://themewagon.github.io/fruitkha/assets/img/avaters/avatar3.png" alt="Los Angeles" style="width:200px; border-radius: 50%; margin-top: 5%; margin-bottom: 10%;"></center>
+           
+    
+            <div class="carousel-caption d-none d-md-block"> 
+                <h5 style="color: black; margin-top: 30%;">Jacob Sikim</h5>
+                <p style="color: black;">"Unde omnis iste natus error veritatis et quae ab illo inventore Sed ut perspiciatis error sit voluptatem accusantium"</p>
+              </div> 
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+          <!-- <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> -->
+      <div class="year">
+        <div class="iframe">
+          <video width="150%" height="100%" controls >
+            <source src="IMG_0936.MP4">
+          </video>
+        </div>
+        <div class="k">
+            <p>Since Year 1999</p>
+            
+            <h1 id="are">We are<span class="l" style="color: orangered;"> Fruikha</span></h1>
+            <script>
+                gsap.to("#are", { duration: 20, x: 100, scale:1.5, ease: "bounce.out"});
+              </script>
+            <br>
+            <p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+             <button class="knowmore">know more</button>
+          </div>
+         </div>
+         <div class="m">
+            <div class="n">
+              <h1 class="u">December sale is on!</h1>
+              <h1 class="u">with big <span class="t" style="color: orangered;">Discount...</span></h1>
+              <br>
+              <p class="r">Sale!</p>
+              <p class="s">  Upto</p>
+               <h1 class="q" style="color: orangered;">50% <span>off</span></h1>
+               <button class="btn3">Shop Now</button>
+              </div>
+              <div class="t">
+              <img id="myimage" src="https://png.pngtree.com/png-vector/20240315/ourlarge/pngtree-strawberry-with-water-splash-in-white-background-png-image_11931868.png">
+              <script>
+                gsap.to("#myimage", { duration: 10, x: 100, scale:0.5, ease: "bounce.out"});
+              </script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+
+
+             </div>
+          </div>
+          <div class="main4">
+            <center><h1 id="news"><span class="lorem" style="color: orangered;">Our</span><span class="dolor" style="text-decoration: underline orangered;"> News</span></h1>
+                <script>
+                    gsap.to("#news", { duration: 20, x: 50, x:-50, scale:1.5, ease: "bounce.out"});
+                  </script>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p></center>
+            <div class="card10">
+                <div class="card11">
+                    <img id="straw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4ClDWhTn_6Kxy1jPa8ePJPf-YJz-XtCi6w&s" alt="Strawberry" width="250vw" height="200vh">
+                    <div class="caption">You will vainly look for fruit on it in autumn.</div>
+                    <span class="author" style="color: gray;"><i class="fas fa-user"></i> Admin</span>
+                    <span class="date" style="color: grey;"><i class="fas fa-calendar"></i> 27 December, 2019</span><br>
+                   <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <a href="#" class="read-more">read more ></a>
+                </div>
+                <div  class="card11">
+                    <img id="straw" src="https://img.freepik.com/premium-photo/close-up-fresh-fruits_488220-43093.jpg" alt="Pasta" width="300vw" height="350vh"><br>
+                    <div class="caption">A man's worth has its season, like tomato.</div>
+                    <span class="author" style="color: gray;"><i class="fas fa-user"></i> Admin</span>
+                    <span class="date" style="color: grey;"><i class="fas fa-calendar"></i> 27 December, 2019</span><br>
+                    
+                    <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <a href="#" class="read-more">read more ></a>
+                </div>
+                <div class="card11" style="">
+                    <img id="straw" src="https://m.media-amazon.com/images/I/41P8zMQqR7L._AC_UF1000,1000_QL80_.jpg" alt="Grapes" width="300vw" height="350vh"><br><br>
+                    <div class="caption">Good thoughts bear good fresh juicy fruit.</div>
+                    <span class="author" style="color: gray;"><i class="fas fa-user"></i> Admin</span>
+                    <span class="date" style="color: grey;"><i class="fas fa-calendar"></i> 27 December, 2019</span><br>
+                    <p>Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                    <a href="#" class="read-more">read more ></a>
+                </div>
+                <script>
+                    gsap.to("#straw", { duration: 20, x: 30,x:-30, scale:0.6, ease: "bounce.out"});
+                  </script>
+            </div>
+            </div>
+            
+      <div class="color">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item1"><img src="https://themewagon.github.io/fruitkha/assets/img/company-logos/1.png" alt="Logo 1"></div>
+                <div class="carousel-item1"><img src="https://themewagon.github.io/fruitkha/assets/img/company-logos/2.png" alt="Logo 2"></div>
+                <div class="carousel-item1"><img src="https://themewagon.github.io/fruitkha/assets/img/company-logos/3.png" alt="Logo 3"></div>
+                <div class="carousel-item1"><img src="https://themewagon.github.io/fruitkha/assets/img/company-logos/4.png" alt="Logo 4"></div>
+                <div class="carousel-item1"><img src="https://themewagon.github.io/fruitkha/assets/img/company-logos/5.png" alt="Logo 5"></div>
+            </div>
+          </div>
+          
+        </div>
+        <script>
+            const track = document.querySelector('.carousel-track');
+            const items = Array.from(track.children);
+            const itemWidth = items[0].getBoundingClientRect().width + 20; // Including margin
+    
+            let currentIndex = 0;
+    
+            function moveToNextSlide() {
+                currentIndex++;
+                if (currentIndex >= items.length) {
+                    currentIndex = 0;
+                    track.style.transition = 'none';
+                    track.style.transform = 'translateX(0)';
+                    setTimeout(() => {
+                        track.style.transition = 'transform 0.5s ease';
+                        moveToNextSlide();
+                    }, 50);
+                } else {
+                    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                }
+            }
+    
+            setInterval(moveToNextSlide, 2000); // Adjust the interval as needed
+        </script>
+        <!-- <section style="background-color: brown; height: 90vh; margin-top: 5%;"> -->
+            <!-- <footer class="footer mt-5 py-5" style="background-color: pink;"> -->
+                <!-- <div class="container" style=" background-color: red;"> -->
+                    <div class="row" style="background-color: black;">
+                        <div class="col-lg-3 col-md-6 mb-4" style="">
+                            <h5 style="color: white;text-decoration: underline orangered;">About us</h5>
+                            <p style="color: gray;">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 style="color: white; text-decoration: underline orangered;">Get in Touch</h5>
+                            <ul class="list-unstyled" style="color: gray;">
+                                <li><i class="fas fa-map-marker-alt"></i> 34/8, East Hukupara, Gifirtok, Sadan.</li>
+                                <li><i class="fas fa-phone"></i> +00 111 222 3333</li>
+                                <li><i class="fas fa-envelope"></i> support@fruitkha.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5 style="color: white; text-decoration: underline orangered;">Pages</h5>
+                            <ul class="list-unstyled" style="color: gray;">
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Shop</li>
+                                <li>News</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 style="color: white; text-decoration: underline orangered;">Subscribe</h5>
+                            <p style="color: gray;">Subscribe to our mailing list to get the latest updates.</p>
+                            <form class="subscribe-form">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit"> <i class="fas fa-envelope"></i>subscribe</button>
+                            </form>
+                        </div>
+                       
+                    <!-- </div> -->
+                </div>
+            <!-- </footer> -->
+            <!-- <br><br><br><br><br> -->
+            <!-- <hr style="color: gray; background-color: black;"> -->
+        
+        <div class="copy" style="background-color: black;">
+            <div class="copy1" style="">
+            <p style="color: gray;">Copyrights © 2019 - <span style="color: orangered;">Imran Hossain</span>, All Rights Reserved.</p><br>
+            <p style="color: gray;">Distributed By -<span style="color: orangered;"> Themewagon</span></p>
+           </div>
+            <div class="copy2" style="color: white;">
+             <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-globe"></i>
+           
+            </div>
+          
+        </div>
+           <hr style="color: gray; background-color: black;">
+           <!-- </section> -->
+        <!-- Code injected by live-server -->
+        <!-- <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script> -->
+</body>
+</html>
